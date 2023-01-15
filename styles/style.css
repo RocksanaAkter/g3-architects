@@ -3,18 +3,21 @@
 /* common styles */
 body {
     font-family: 'Poppins', sans-serif;
-    
+    width: 100%;
     margin: 0;
 
+}
+p {
+    color: #727272;
+    font-size: 13px;
+    margin-bottom: 32px;
 }
 
 /* header section  */
 header {
     background-color: rgba(255, 144, 14, 0.1);
-    padding-left: 240px;
-    padding-right: 240px;
-
-
+    padding-left: 13%;
+    padding-right: 13%;
 }
 
 .navBar {
@@ -24,10 +27,6 @@ header {
     padding-top: 50px;
 }
 
-.nav-text {
-    font-weight: 700;
-    font-size: 40px;
-}
 
 .nav-link {
     text-decoration: none;
@@ -46,64 +45,201 @@ header {
     font-weight: 700;
     font-size: 45px;
 }
-.banner section p{
-    color: #727272;
+
+
+
+.btn-exploreMore {
+    width: 180px;
+    height: 64px;
+    left: 870px;
+    top: 463px;
+    border: 0;
+    background: #FF900E;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
     font-size: 16px;
     margin-bottom: 32px;
 }
 
-.btn-exploreMore{
-    width: 180px;
-height: 64px;
-left: 870px;
-top: 463px;
-border: 0;
-background: #FF900E;
-border-radius: 8px;
-color: white;
-font-weight: 600;
-font-size: 16px;
-margin-bottom: 32px;
-}
-
 .banner-img {
-    width: 1000px;
-    height: 500px;
+    width: 100%;
+    height: 650px;
     padding-bottom: 45px;
 }
 
 /* second-part start  */
-.second-part{
+.second-part {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    padding-left: 240px;
-    padding-right: 240px;
-   margin-top: 70px;
+    padding-left: 13%;
+    padding-right: 13%;
+    margin-top: 70px;
 }
-.second-part img{
-    width: 230px;
-    height: 230px;
+
+.second-part img {
+    width: 250px;
+    height: 250px;
 }
-.second-part-img{
+
+.second-part-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
 }
+.second-part h1{
+    font-size: 38px;
+    font-family: 'Work Sans';
+    
+    font-weight: 500;
+    color: #727272;
+}
+
 /* third-part-start */
-.third-part{
-    padding-left: 240px;
-    padding-right: 240px;
+.third-part {
+
+    padding-left: 13%;
+    padding-right: 13%;
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
-    column-gap: 50px;
 }
-.third-left-side{
-    width: 100%;
+
+.third-left-side {
+    margin-right: 100px;
 }
-.third-right-side img{
-    width: 650px;
-    height: 900px;
+
+.third-left-side>h1,
+.fourth-part>div>h1,
+.fifth-part>h1 , .nav-text{
+ font-size: 35px;
+}
+
+.third-left-side>h1 {
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
+
+.blog {
+    margin-bottom: 5px;
+    padding: 10px 10px 5px 5px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px rgb(238, 238, 238);
+}
+
+.third-right-image {
+    width: 600px;
+    height: 870px;
+}
+
+.btn-experience {
+    position: relative;
+    top: -60px;
+    left: -50px;
+    padding: 30px 60px 30px 60px;
+    border: 0;
+    background: #FF900E;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+/* fourth-part-start */
+.fourth-part {
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+.facts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.facts-element{
+    font-weight: 700;
+font-size: 20px;
+text-align: center;
+color: #707070;
+width: 15%;
+margin: 0;
+padding: 10px 20px;
+border-radius: 4px;
+border:2px solid #FF900E;
+background-color: #f5eded;
+}
+.facts-element:hover {
+    border: 2px solid red;
+}
+
+/* fifth-part-start */
+.fifth-part {
+    text-align: center;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+.sponsors-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px
+}
+
+/* footer-part-start  */
+footer {
+    padding: 70px 200px 70px 200px;
+    text-align: center;
+}
+
+footer div {
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 10px;
+}
+
+/*....................
+     media queries
+.......................  */
+@media only screen and (max-width: 688px) {
+    .body {
+        width: 540px;
+    }
+
+    header,
+    .second-part,
+    .third-part,
+    .fourth-part, .fifth-part, .sponsors-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+
+    .navBar {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .facts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        
+    }
+
+    .third-right-image {
+
+        width: 98%;
+    }
+    .sponsors-item img{
+        
+        padding-bottom: 40px;
+    }
+    .footer div{
+        padding: 10px 30px 10px 30px;
+    }
+    
 }
