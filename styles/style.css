@@ -91,3 +91,19 @@ margin-bottom: 32px;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
 }
+/* third-part-start */
+.third-part{
+    padding-left: 240px;
+    padding-right: 240px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+.third-left-side{
+    width: 100%;
+}
+.third-right-side img{
+    width: 650px;
+    height: 900px;
+}
