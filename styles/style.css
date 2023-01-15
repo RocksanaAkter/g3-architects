@@ -3,7 +3,7 @@
 /* common styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #F3F1FF;
+    
     margin: 0;
 
 }
@@ -70,4 +70,24 @@ margin-bottom: 32px;
     width: 1000px;
     height: 500px;
     padding-bottom: 45px;
+}
+
+/* second-part start  */
+.second-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding-left: 240px;
+    padding-right: 240px;
+   margin-top: 70px;
+}
+.second-part img{
+    width: 230px;
+    height: 230px;
+}
+.second-part-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
 }
