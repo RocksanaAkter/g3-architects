@@ -196,6 +196,8 @@ header {
 /*..............bonus part............  */
 .center {
     text-align: center;
+    padding-left: 13%;
+    padding-right: 13%;
 }
 
 .btn button {
